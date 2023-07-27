@@ -1,0 +1,28 @@
+Linux相关
+	1. 创建超链接，避免模型过大移动耗时 ln -s 
+	2. 查看8080端口是否被占用 netstat -tunlp | grep 8080 
+	T tcp
+	U udp
+	N network
+	L listening port 
+	P process
+	
+	3. 显示端口被谁占用 lsof -i:端口号
+	4. 停止pid号的进程： kill -9 <PID号码>
+
+在text-generation-webui中，启动它的命令为 python server.py --listen --listen-host 0.0.0.0
+0.0.0.0 是回环地址，也可以填写为 真实的IP，例如 python server.py --listen --listen-host 10.60.10.4 
+
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+算法相关
+	1. 了解模型参数
+	2. 了解显卡占用
+	load-in-8bit
+	nvidia-smi 显示显卡占用情况
+	3. 了解模型占用显存
+	B~G
+	4. 如何从生成过度到对话
+	5. LoRa微调 定制化训练
+
+	
